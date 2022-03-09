@@ -153,12 +153,12 @@ function check_product()
         echo "Couldn't locate the top of the tree.  Try setting TOP." >&2
         return
     fi
-    if (echo -n $1 | grep -q -e "^octavi_") ; then
-        OCTAVI_BUILD=$(echo -n $1 | sed -e 's/^octavi_//g')
+    if (echo -n $1 | grep -q -e "^blaze_") ; then
+        BLAZE_BUILD=$(echo -n $1 | sed -e 's/^blaze_//g')
     else
-        OCTAVI_BUILD=
+        BLAZE_BUILD=
     fi
-    export OCTAVI_BUILD
+    export BLAZE_BUILD
 
         TARGET_PRODUCT=$1 \
         TARGET_BUILD_VARIANT= \
