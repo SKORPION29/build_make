@@ -712,16 +712,16 @@ function lunch()
     check_product $product
     if [ $? -ne 0 ]
     then
-        # if we can't find a product, try to grab it off the Project-Awaken GitHub
+        # if we can't find a product, try to grab it off the ProjectBlaze GitHub
         T=$(gettop)
         cd $T > /dev/null
-        vendor/awaken/build/tools/roomservice.py $product
+        vendor/blaze/build/tools/roomservice.py $product
         cd - > /dev/null
         check_product $product
     else
         T=$(gettop)
         cd $T > /dev/null
-        vendor/awaken/build/tools/roomservice.py $product true
+        vendor/blaze/build/tools/roomservice.py $product true
         cd - > /dev/null
     fi
 
