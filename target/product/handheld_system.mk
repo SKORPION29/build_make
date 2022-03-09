@@ -86,7 +86,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_VENDOR_PROPERTIES += \
     ro.carrier?=unknown \
 
-ifeq ($(OCTAVI_BUILD),)
+ifeq ($(BLAZE_BUILD),)
 PRODUCT_VENDOR_PROPERTIES += \
     ro.config.notification_sound?=OnTheHunt.ogg \
     ro.config.alarm_alert?=Alarm_Classic.ogg

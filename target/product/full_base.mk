@@ -42,7 +42,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     netutils-wrapper-1.0
 
-ifeq ($(OCTAVI_BUILD),)
+ifeq ($(BLAZE_BUILD),)
 # Additional settings used in all AOSP builds
 PRODUCT_VENDOR_PROPERTIES := \
     ro.config.ringtone?=Ring_Synth_04.ogg \
